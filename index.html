@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Weather</title>
+	<link rel="stylesheet" type="text/css" href="./weather-icons/css/weather-icons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+	.weather-wraper{
+		display: flex;
+		overflow: hidden;
+		justify-content: center;
+		align-items: center;
+		font-size: 4rem;
+		height: 15rem;
+	}
+	.aram {background:#00d2d3 }
+	.nasim {background:#48dbfb }
+	.badMolayem {background:#0abde3 }
+	.badShadid {background:#8395a7 }
+	.toofani {background:#576574 }
+	.custum-form{
+		position: relative;
+	}
+	span{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+	.custom-btn{
+		height: 40px;
+		width: 40px;
+		font-size: 10px;
+		font-weight: bold;
+		line-height: 20px;
+		padding: 5px;
+		text-align: center;
+	}
+
+</style>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 my-3 mx-auto text-center">
+				<h1>سامانه هواشناسی ایران</h1>
+				<hr>
+				<div class="row">
+					<div class="input-container">
+						<div class="col-md-12 my-3 mx-auto">
+							<form id="city">
+								<span>
+									<input name="city" type="text" placeholder="نام شهر" name="city" class="form form-control text-center">
+								<button class="btn btn-success mx-1 custom-btn text-center" type="submit">استعلام</button>
+								</span>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div id="app">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="weather.js"></script>
+</html>
